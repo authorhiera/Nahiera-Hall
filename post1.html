@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nahiera Hall</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Navigation Bar Styling */
+        header {
+            background-color: palevioletred;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fdd835;
+        }
+
+        /* Blog Section Styling */
+        .blog-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Main blog content */
+        .blog-posts {
+            flex: 3;
+        }
+
+        .post {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 20px;
+        }
+
+        .post-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: palevioletred;
+            margin-bottom: 10px;
+        }
+
+        .post-excerpt {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            font-weight: bold;
+            color: palevioletred;
+            font-size: 1rem;
+        }
+
+        .read-more:hover {
+            color: #fdd835;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar h3 {
+            font-family: 'Dancing Script', cursive;
+            color: palevioletred;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: #333;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .sidebar a:hover {
+            color: #fdd835;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Nahiera Hall</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="blog-container">
+        <!-- Main Blog Posts -->
+        <div class="blog-posts">
+            <div class="post">
+                <h2 class="post-title">What novel would you like to see?</h2>
+                <p class="post-excerpt">Hello, Below are some prompts listed. Read them then you can make a slection on
+                    your preference using the form on the contact form or simply emailing me. Ofcourse, if there is none
+                    that you like, you can make your own request and in the next round I will add it to a blog for
+                    another decision round! Go ahead and make your choice now.
+                </p>
+            </div>
+
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h3>Recent Posts</h3>
+            <a href="post1.html">What novel would you like to see?</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
+        <p>&copy; 2025 Nahiera Hall. All rights reserved.</p>
+        <div>
+            <a href="https://instagram.com/_.Your.Hiera._" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>

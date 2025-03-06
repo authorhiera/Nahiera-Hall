@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Nahiera Hall</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Navigation Bar Styling */
+        header {
+            background-color: palevioletred;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fdd835;
+        }
+
+        /* About Section Styling */
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 400px;
+            margin-right: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 2;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .about-text h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: palevioletred;
+            margin-bottom: 20px;
+        }
+
+        /* Ask Me Anything Section */
+        .ask-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .ask-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: palevioletred;
+        }
+
+        .ask-form input,
+        .ask-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .ask-form button {
+            padding: 10px 20px;
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .ask-form button:hover {
+            background-color: #fdd835;
+        }
+
+        .answers-section {
+            margin-top: 20px;
+        }
+
+        .answer {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Nahiera Hall</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-image">
+            <img src="C:\Users\alliyah\OneDrive\Documents\Author Website\Images\Snapchat-1003266670.jpg"
+                alt="Your Image">
+        </div>
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hello! I’m Nahiera Hall, an author who loves to weave tales that explore the complexities of life, love,
+                and
+                destiny. I’ve always believed that stories are powerful tools that can transport us to different worlds,
+                challenge our perspectives, and shape our future. When I’m not writing, you can find me indulging in
+                books, coding, and sleeping. Thank you for visiting my website!</p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
+        <p>&copy; 2025 Nahiera Hall. All rights reserved.</p>
+        <div>
+            <a href="https://instagram.com/_.Your.Hiera._" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission
+        document.getElementById('askForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent page reload
+
+            const question = document.getElementById('question').value;
+            const answer = document.getElementById('answer').value;
+
+            if (question && answer) {
+                // Create a new answer element
+                const answerDiv = document.createElement('div');
+                answerDiv.classList.add('answer');
+                answerDiv.innerHTML = `<strong>Q: ${question}</strong><p>A: ${answer}</p>`;
+
+                // Append the answer to the answers section
+                document.getElementById('answersSection').appendChild(answerDiv);
+
+                // Clear the input fields
+                document.getElementById('question').value = '';
+                document.getElementById('answer').value = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

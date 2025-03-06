@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahiera Hall | Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Navigation Bar Styling */
+        header {
+            background-color: palevioletred;
+            height: 60px;
+            /* Reduced height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background for contrast */
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            /* Adjusted for a smaller header */
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fdd835;
+        }
+
+        /* Books Page Styling */
+        .books-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .book-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .book-card p {
+            font-family: 'Poppins', sans-serif;
+            color: #555;
+            padding: 0 10px;
+        }
+
+        .book-card a {
+            text-decoration: none;
+            background-color: palevioletred;
+            color: white;
+            padding: 10px;
+            margin: 15px 0;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-card a:hover {
+            background-color: #fdd835;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Nahiera Hall</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Books Section -->
+    <section id="books" class="books-section">
+        <div class="book-card">
+            <img src="C:\Users\alliyah\OneDrive\Documents\Author Website\Images\Blissful.png"
+                alt="Fading Shadows Cover">
+            <h3>Fading Shadows</h3>
+            <p>The story centers on Evan, a reserved artist grappling with depression after a family tragedy, and his
+                developing relationship with Tyler, a popular student drawn to Evan's anonymous artwork. Their budding
+                romance faces challenges as Evan deals with self-worth issues and the fear of burdening Tyler with his
+                struggles.</p>
+            <a href="fadingshadows.html">Read More</a>
+        </div>
+
+        <div class="book-card">
+            <img src="C:\Users\alliyah\OneDrive\Documents\Author Website\Images\When I’m With You.png"
+                alt="When I'm With You Cover">
+            <h3>When I'm With You</h3>
+            <p>Amara meets
+                him—the boy who brings color to her world, coaxing her out of her shell and giving her the confidence to
+                truly live. Her life transforms. But as her love deepens, so does
+                her obsession and anxiety. Desperate to keep him close, she’s willing to do whatever it takes to hold
+                onto the one person who makes her feel alive.</p>
+            <a href="wiwy.html">Read More</a>
+        </div>
+
+        <!-- Add more books as needed -->
+    </section>
+
+    <!-- Footer (Optional) -->
+    <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
+        <p>&copy; 2025 Nahiera Hall. All rights reserved.</p>
+        <div>
+            <a href="https://www.instagram.com/_.your.hiera._" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>
